@@ -1,6 +1,6 @@
 package linked.lists;
 
-import utils.MatrixPrinter;
+import utils.Printer;
 
 public class AddTwoNumbersII {
 
@@ -25,8 +25,8 @@ public class AddTwoNumbersII {
         }
 
 
-        MatrixPrinter.printListNodes(l1);
-        MatrixPrinter.printListNodes(l2);
+        Printer.printListNodes(l1);
+        Printer.printListNodes(l2);
 
         Result res = sumElements(l1,l2);
 
@@ -38,7 +38,7 @@ public class AddTwoNumbersII {
             result = res.node;
         }
 
-        MatrixPrinter.printListNodes(result);
+        Printer.printListNodes(result);
 
 
 

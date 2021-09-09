@@ -1,8 +1,6 @@
 package arrays.strings;
 
-import utils.MatrixPrinter;
-
-import java.util.Arrays;
+import utils.Printer;
 
 /**
  *
@@ -19,7 +17,7 @@ public class TrappingRainWaterN2 {
 
         setupMatrix(input, rainMatrix);
 
-        MatrixPrinter.printMatrix(rainMatrix);
+        Printer.printMatrix(rainMatrix);
 
         int totalWaterDrops = 0;
         String state = "no_wall"; // wall_found

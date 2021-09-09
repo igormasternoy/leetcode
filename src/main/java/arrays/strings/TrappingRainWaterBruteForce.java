@@ -1,7 +1,5 @@
 package arrays.strings;
 
-import utils.MatrixPrinter;
-
 /**
  *
  */

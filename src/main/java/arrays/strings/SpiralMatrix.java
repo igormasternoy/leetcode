@@ -1,6 +1,6 @@
 package arrays.strings;
 
-import utils.MatrixPrinter;
+import utils.Printer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class SpiralMatrix {
 //        int[][] input = new int[][]{{3, 2, 4}};
 
 
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
 
 
         int l = Math.min(input.length, input[0].length);
@@ -36,7 +36,7 @@ public class SpiralMatrix {
 
 
         }
-        MatrixPrinter.printList(result);
+        Printer.printList(result);
 
 
     }

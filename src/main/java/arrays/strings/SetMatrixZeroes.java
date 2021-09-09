@@ -1,6 +1,6 @@
 package arrays.strings;
 
-import utils.MatrixPrinter;
+import utils.Printer;
 
 /**
  * To many cycle to reach space O(1)
@@ -14,7 +14,7 @@ public class SetMatrixZeroes {
 //        int[][] input = new int[][]{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
 //        int[][] input = new int[][]{{1, 0}};
 //        int[][] input = new int[][]{{1, 2, 3, 4}, {5, 0, 7, 8}, {0, 10, 11, 12}, {13, 14, 15, 0}};
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
         System.out.println();
 
         boolean isFirstColWithZeroes = false;
@@ -47,7 +47,7 @@ public class SetMatrixZeroes {
             }
         }
 
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
         System.out.println();
 
         if(isFirstRolWithZeroes){
@@ -65,7 +65,7 @@ public class SetMatrixZeroes {
 
 
 
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
         System.out.println();
 
     }

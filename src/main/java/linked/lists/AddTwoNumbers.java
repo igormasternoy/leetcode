@@ -1,6 +1,6 @@
 package linked.lists;
 
-import utils.MatrixPrinter;
+import utils.Printer;
 
 public class AddTwoNumbers {
 
@@ -42,7 +42,7 @@ public class AddTwoNumbers {
         }
 
 
-        MatrixPrinter.printListNodes(resultHead);
+        Printer.printListNodes(resultHead);
 
 
     }

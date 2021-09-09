@@ -1,6 +1,6 @@
 package arrays.strings;
 
-import utils.MatrixPrinter;
+import utils.Printer;
 
 public class RotateImage {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class RotateImage {
 
 //        int[][] input = new int[][]{{1}};
 
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
         System.out.println();
 
         int l = input.length;
@@ -64,7 +64,7 @@ public class RotateImage {
             iterationCount--;
         }
 
-        MatrixPrinter.printMatrix(input);
+        Printer.printMatrix(input);
 
 //
 //        while (iterationCount >= 0) {

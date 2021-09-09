@@ -4,7 +4,7 @@ import linked.lists.ListNode;
 
 import java.util.List;
 
-public class MatrixPrinter {
+public class Printer {
 
     public static void printListNodes(ListNode input) {
         while (input != null) {
