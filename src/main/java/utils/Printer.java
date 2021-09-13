@@ -41,6 +41,16 @@ public class Printer {
         System.out.println();
     }
 
+    public static void printMatrix(long[][] matrix) {
+        for (long[] ints : matrix) {
+            for (long anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
 
     public static void printMatrix(int[][] matrix) {
         printMatrix(matrix, true);
