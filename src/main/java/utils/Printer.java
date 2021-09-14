@@ -2,10 +2,41 @@ package utils;
 
 import linked.lists.ListNode;
 import linked.lists.Node;
+import trees.graphs.TreeNode;
 
 import java.util.List;
 
 public class Printer {
+
+    public static void printTreeNode(TreeNode matrix) {
+        if(matrix == null){
+            System.out.println("Nil");
+            return;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append(matrix.val);
+        sb.append('\n');
+        printTreeNode(0, true, sb, matrix.right);
+        printTreeNode(0, false, sb, matrix.left);
+
+        System.out.println(sb);
+    }
+
+    private static void printTreeNode(int shift, boolean isRight, StringBuilder buffer, TreeNode matrix) {
+        if (matrix == null) {
+            return;
+        }
+        buffer.append((shift == 0) ? "" : String.format("├%" + shift + "s", ""));
+        buffer.append(isRight ? "├── " : "└── ");
+        buffer.append(matrix.val);
+        buffer.append("\n");
+
+        int nextShit = shift+4;
+        printTreeNode(nextShit, true, buffer, matrix.right);
+        printTreeNode(nextShit, false, buffer, matrix.left);
+
+
+    }
 
     public static void printNodes(Node input) {
         while (input != null) {
