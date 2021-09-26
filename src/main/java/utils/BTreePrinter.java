@@ -29,7 +29,7 @@ public class BTreePrinter {
         for (TreeNode node : nodes) {
             if (node != null) {
                 System.out.print(node.val);
-                System.out.print(node.next);
+                if (node.next != null) System.out.print(node.next);
                 newNodes.add(node.left);
                 newNodes.add(node.right);
             } else {
