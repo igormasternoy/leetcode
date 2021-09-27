@@ -82,6 +82,16 @@ public class Printer {
         System.out.println();
     }
 
+    public static void printMatrix(char[][] matrix) {
+        for (char[] ints : matrix) {
+            for (char anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
 
     public static void printMatrix(int[][] matrix) {
         printMatrix(matrix, true);
